@@ -196,7 +196,7 @@ z-index: -1;
     text-transform: uppercase;
     display: block;
     width: fit-content;
-    font-size: 5vw;
+    font-size: 2rem;
     position: relative;
     color: transparent;
     animation: text_reveal .5s ease forwards;

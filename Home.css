@@ -9,10 +9,10 @@
 	padding: 0;
 	box-sizing: border-box;
 }
-/* 
+
 body{
   scroll-behavior: smooth;
-} */  
+}
 
 html,body
 {
@@ -208,7 +208,7 @@ z-index: -1;
     text-transform: uppercase;
     display: block;
     width: fit-content;
-    font-size: 3rem;
+    font-size: 2rem;
     position: relative;
     color: transparent;
     animation: text_reveal .5s ease forwards;
