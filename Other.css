@@ -196,7 +196,7 @@ z-index: -1;
     text-transform: uppercase;
     display: block;
     width: fit-content;
-    font-size: 3rem;
+    font-size: 5vw;
     position: relative;
     color: transparent;
     animation: text_reveal .5s ease forwards;
@@ -263,7 +263,12 @@ z-index: -1;
         color: #007bff;
     }
 }
-
+/* 
+@media screen and(max-width: 616px){
+  #hero h1{
+    font-size: 3vw;
+  }
+} */
 
 /*Others*/
 .Email h1{
@@ -427,11 +432,22 @@ z-index: -1;
   transition: .5s;
   align-items: center;
   justify-content: center;
-  margin-left: 850px;
+  margin-left: 840px;
 }
 
 .cta:hover{
 	background-color: #007bff;
 	color: white;
 	text-decoration: none;
+}
+
+.p{
+  text-align: center;
+}
+
+.form1{
+  display: none;
+}
+.form2{
+  display: none;
 }
