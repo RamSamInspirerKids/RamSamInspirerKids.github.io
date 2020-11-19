@@ -20,7 +20,6 @@ html,body
     height: 100%;
     margin: 0px;
     padding: 0px;
-    overflow-x: hidden; 
 }
 
 a{
@@ -527,6 +526,26 @@ z-index: -1;
 	}
 }
 /*Others*/
+.Email h1{
+	border-bottom: 5px solid lightseagreen;
+	width: 10%;
+	color: black;
+	padding: 10px;
+	transition: 1s ease;
+}
+
+.Email h1:hover{
+	border-bottom: 5px solid turquoise;
+	width: 10%;
+	color: mediumaquamarine;
+}
+
+.Email p{
+    color: lightseagreen;
+	transition: 1s ease;
+	color: mediumaquamarine;
+}
+
 .arrow-btn{
     position: fixed;
     bottom: 30px;
@@ -550,9 +569,34 @@ z-index: -1;
     font-size: 25px;
 }
 
+
+.profile{
+	font-family: 'Dosis',sans-serif;
+	font-style: italic;
+}
+
+.head{
+	font-weight: bold;
+}
+
+.profile .showhide{
+	padding: 5px;
+	background-color: #000000;
+	box-shadow: none;
+	border: 2px solid black;
+}
+
+.profile .showhide:hover{
+	opacity: 0.4;
+   text-decoration: none;
+   background-color: #007bff;
+   border: 2px solid #007bff;
+}
+
+
 .cta{
 	height: 60px;
-	width: 200px;
+	width: 270px;
 	padding: 10px;
 	border: 2px solid #007bff;
 	text-align: center;
@@ -565,4 +609,92 @@ z-index: -1;
 	background-color: #007bff;
 	color: white;
 	text-decoration: none;
+}
+
+.head{
+	font-size: 22px;
+	text-align: center;
+}
+
+.body{
+	font-size: 1rem;
+	text-align: center;
+	color: #000;
+}
+
+.Port{
+    width:100%;
+	height: 650px;
+	background: #217bcf;
+}
+
+.port #hero {
+   left: 300;
+}
+
+.market .card{
+    left: 5pc;
+    width: 500px;
+    height: 500px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px #000;
+}
+
+.market .card p{
+   color: black;
+   font-size: x-large;
+   font-family: 'Dosis',sans-serif;
+}
+
+.market .card h1{
+  color: black;
+  font-size: xx-large;
+  font-family: 'Dosis',sans-serif;
+}
+
+.body-system{
+   font-family: 'dosis',Arial, Helvetica, sans-serif;
+   margin: 5px;
+   padding: 5px;
+}
+
+.body-system h1{
+  font-weight: bold;
+  font-size: 35px;
+  text-align: center;
+}
+
+.body-system p{ 
+  font-size: 30px;
+  text-align: center;
+}
+
+
+.cta{
+	height: 60px;
+	width: 200px;
+	padding: 10px;
+	border: 2px solid #007bff;
+	text-align: center;
+	color: black;
+	font-size: 22px;
+  transition: .5s;
+}
+
+.cta:hover{
+	background-color: #007bff;
+	color: white;
+	text-decoration: none;
+}
+
+.form1{
+  display: none;
+}
+.form2{
+  display: none;
+}
+
+#aus{
+  width: 100%;
 }
