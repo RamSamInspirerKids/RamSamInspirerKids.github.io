@@ -160,6 +160,21 @@ header{
       width: 100%;
 }
 
+.video-container-2 {
+  z-index: -100;
+  width: 105%;
+  height: 98vh;
+  overflow:hidden;
+  position:absolute;
+  top:0;
+  left:0;
+  }
+  
+  #video-bg{
+    width: 100%;
+}
+
+
 .image{
 	float: left;
 	background: transparent;
@@ -659,18 +674,6 @@ z-index: -1;
    padding: 5px;
 }
 
-.body-system h1{
-  font-weight: bold;
-  font-size: 35px;
-  text-align: center;
-}
-
-.body-system p{ 
-  font-size: 30px;
-  text-align: center;
-}
-
-
 .cta{
 	height: 60px;
 	width: 200px;
@@ -697,4 +700,12 @@ z-index: -1;
 
 #aus{
   width: 100%;
+}
+
+.edit{
+  font-family: 'Dosis',Arial, Helvetica, sans-serif;
+  width: 50%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
