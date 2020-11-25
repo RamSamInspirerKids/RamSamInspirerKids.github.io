@@ -29,11 +29,11 @@ header{
     width: 100%;
 }
 
-.diff{
-  height: 98vh;
-  background: url() no-repeat;
-  width: 100%;
+.diff {
+  width: 119%;
+  background: url(Vidimg/Others/heart.jpg) no-repeat;
   background-size: cover;
+  height: 98vh;
 }
 
 .covid{
