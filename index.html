@@ -44,20 +44,19 @@
              <div class="video-container">
                 <video autoplay loop muted id="video-bg">
           
-                  <source src="Vidimg/Beach Video 1.mp4" type="video/mp4">
+                  <source src="Vidimg/Ice.mp4" type="video/mp4">
           
                 </video>
             </div>
-        <!--Hero-->
-        <section id="hero">
-            <div class="hero container-1">
-                <div>
-                    <h1>Welcome To <span></span></h1>
-                    <h1>RamSam The Inspirer <span></span></h1>
-                    <h1>Kids<span></span></h1>
-                </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="H1">
+                <h1>Welcome To <span></span></h1>
+                <h1>RamSam The Inspirer <span></span></h1>
+                <h1>Kids<span></span></h1>
             </div>
-        </section>
 <br>
 <br> 
 <br> 
@@ -66,57 +65,34 @@
 <br> 
 <br> 
 <br> 
-<!--About Section-->
-<div class="about-section">
-    <div class="inner-width">
-        <h1>About Us</h1>
-        <div class="border"></div>
-        <div class="about-section-row">
-            <div class="about-section-col">
-                <div class="about">
-                    <p>
-                        Hi my name is Samhith and I am the creator of the website RamSam The Inspirer Kids and I have based my blog to tell you interesting facts.<br/>
-                        I have designed this websites logo to be a box with open ends that means there is no limit for ideas or the content that I am going to share in my blog.
-                    </p>
-                </div>
-            </div>
-            <div class="about-section-col">
-                <div class="skills">
-                    <div class="skill">
-                        <div class="tittle">How Many Posts</div>
-                        <div class="progress">
-                            <div class="progress-bar p1"><span>1</span></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<br>
-<br>
+<br> 
 <!--Services Section-->
 <div class="H11">
     <h1>Our Posts</h1>
 </div>
+<a href="Posts.html">
 <section class="Background">
 <div class="container" data-aos="fade-up-left">
     <div class="row">
         <div class="col-md-3">
             <div class="main">
+                <a href="Posts.html">
                 <div class="service">
                     <div class="service-logo">
                         <img src="Vidimg/Icons/Brain.png" alt="img">
                     </div>
+                    <a href="Posts.html">
                     <h4><a href="Posts.html">Learning</a></h4>
-                    <p>All Of The Content In Our Posts Are Educational And Will Teach Kids New Things</p>
+                    <p><a href="Posts.html">All Of The Content In Our Posts Are Educational And Will Teach Kids New Things</a></p>
                 </div>
                 <div class="shadowOne"></div>
                 <div class="shadowTwo"></div>
             </div>
+            </a>
         </div>
         <div class="col-md-3">
             <div class="main">
+                <a href="Posts.html"></a>
                 <div class="service">
                     <div class="service-logo">
                         <img src="Vidimg/Icons/News2.Jpg" alt="img">
@@ -127,22 +103,11 @@
                 <div class="shadowOne"></div>
                 <div class="shadowTwo"></div>
             </div>
+        </a>
         </div>
         <div class="col-md-3">
             <div class="main">
-                <div class="service">
-                    <div class="service-logo">
-                        <img src="Vidimg/Icons/FunFacts.jpg" alt="img">
-                    </div>
-                    <h4><a href="Did You Know.html">Fun Facts</a></h4>
-                    <p>We Post Fun Facts For kids To Learn New Things</p>
-                </div>
-                <div class="shadowOne"></div>
-                <div class="shadowTwo"></div>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="main">
+                <a href="Posts.html">
                 <div class="service">
                     <div class="service-logo">
                         <img src="Vidimg/Icons/developmant.png" alt="img">
@@ -154,13 +119,32 @@
                 <div class="shadowTwo"></div>
             </div>
         </div>
+    </a>
+    <a href="Did You Know.html">
+        <div class="col-md-3">
+            <div class="main">
+                <a href="Did You Know.html">
+                <div class="service">
+                    <div class="service-logo">
+                        <img src="Vidimg/Icons/FunFacts.jpg" alt="img">
+                    </div>
+                    <h4><a href="Did You Know.html">Fun Facts</a></h4>
+                    <p>We Post Fun Facts For kids To Learn New Things</p>
+                </div>
+                <div class="shadowOne"></div>
+                <div class="shadowTwo"></div>
+            </div>
+        </a>
+        </div>
+    </a>
     </div>
 </div>
 </section>
-<br>
-<br>
-<br>
-<!--Footer-->
+<br> 
+<br> 
+<br> 
+<br>  
+<!-- Footer-->
 <div class="footer">
     <div class="inner_footer">
         <div class="logo_container">
@@ -181,32 +165,5 @@
             <a href="https://www.sites.google.com/view/ramsam-the-inspirer" class="Button">RamSam The Inspirer</a>
         </div>
     </div>
-<script>
-    var open = document.getElementById('hamburger');
-var changeIcon = true;
-
-open.addEventListener("click", function(){
-
-    var overlay = document.querySelector('.overlay');
-    var nav = document.querySelector('nav');
-    var icon = document.querySelector('.menu-toggle i');
-
-    overlay.classList.toggle("menu-open");
-    nav.classList.toggle("menu-open");
-
-    if (changeIcon) {
-        icon.classList.remove("fa-bars");
-        icon.classList.add("fa-times");
-
-        changeIcon = false;
-    }
-    else {
-        icon.classList.remove("fa-times");
-        icon.classList.add("fa-bars");
-        changeIcon = true;
-    }
-});
-AOS.init();
-</script>
 </body>
 </html>

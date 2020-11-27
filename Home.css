@@ -28,6 +28,14 @@ nav {
 	height: 50px;
 	background-color: #007bff;
 }
+
+.did{
+  background: url(Vidimg/Others/Brain\ with\ glasses.jpg) no-repeat;
+  background-size: cover;
+  height: 98vh;
+  width: 100%;
+}
+
 nav .logo {
 	float: left;
 	width: 40%;
@@ -77,7 +85,7 @@ nav .icon-burger .line {
 	border-radius: 3px;
 	transition: all .3s ease-in-out;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 796px) {
 	nav .logo {
 		float: none;
     width: auto;
@@ -118,14 +126,16 @@ nav .icon-burger .line {
 	}
 	nav :checked ~ .icon-burger .line:nth-child(2) {
 		opacity: 0;
-	}
+  }
 	
 }
+
+
 
 .video-container {
     z-index: -100;
     width: 100%;
-    height: 98vh;
+    height: 130vh;
     overflow:hidden;
     position:absolute;
     top:0;
@@ -135,6 +145,18 @@ nav .icon-burger .line {
     #video-bg{
       width: 100%;
 }
+
+/* @media screen and(max-width: 1509){
+  .video-container {
+    width: 100vw;
+    height: 150vh;
+    }
+    
+    #video-bg{
+      width: 100vw;
+      height: 150vh;
+}
+} */
 
 .image{
 	float: left;
@@ -255,7 +277,7 @@ z-index: -1;
 
 /*About Section*/
 .about-section{
-	width: 100%;
+	width: 90%;
 	background: #f1f1f1;
 	padding: 40px 0;
 }
@@ -350,12 +372,26 @@ z-index: -1;
     color: #fff;
 }
 
+.H1{
+  text-align: center;
+  top: 100px;
+  /* margin: 50px auto 120px !important;	 */
+  color: #fff;
+}
+
+.H111{
+  text-align: center;
+  top: 100px;
+  /* margin: 50px auto 120px !important;	 */
+  color: #000;
+}
+
 .main{
     width: 100%;
     height: 400px;
     text-align: center;
     position: relative;
-	cursor: pointer;
+	  cursor: pointer;
 }
 
 .service{
@@ -364,7 +400,7 @@ z-index: -1;
     border-radius: 10px;
     position: absolute;
     bottom: 0;
-    height: 330px;
+    height: 200px;
     z-index: 1;
     box-shadow: 0 0 20px -15px #030380;
     transition: transform .8s;
@@ -393,6 +429,15 @@ z-index: -1;
    margin-top: 50px auto;
    position: relative;
    text-decoration: none;
+}
+
+.service p a{
+   height: 50px;
+   color: #000;
+}
+
+.service p a:hover{
+  text-decoration: none;
 }
 
 .shadowOne{
