@@ -27,30 +27,20 @@ nav {
   padding: 0 5%;
   width: 100%;
 	height: 50px;
-	background-color: rgb(176, 233, 255);
+	background-color: rgb(107, 229, 238);
 }
 
 .did{
-   background-image: url(Vidimg/Brain\ with\ glasses.jpg);
+   background-image: url();
    background-repeat: no-repeat;
    background-size: cover;
    background-position: center center;
    background-attachment: fixed;
    height: 100vh;
-   max-width: 105% ;
+   width: 105% ;
 }
 
 .covid{
-  background-image: url(Vidimg/CCovid.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  background-attachment: fixed;
-  height: 100vh;
-  max-width: 105% ;
-}
-
-.About{
   background-image: url();
   background-repeat: no-repeat;
   background-size: cover;
@@ -60,8 +50,18 @@ nav {
   max-width: 105% ;
 }
 
+.About{
+  background-image: url(Vidimg/About.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  height: 50vh;
+  max-width: 100% ;
+}
+
 .Post{
-  background-image: url(Vidimg/Post.jpg);
+  background-image: url();
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -71,22 +71,40 @@ nav {
 }
 
 .cont{
-  background-image: url(Vidimg/Contact.png);
+  background-image: url();
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
   height: 100vh;
-  max-width: 105%;
+  max-width: 100%;
+}
+
+@media screen and (max-width: 425){
+     .About nav{
+       width: 0%;
+     }
 }
 
 .did nav{
   width: 100%;
 }
 
+.About nav{
+   width: 100%;
+}
+@media screen and (max-width:1220){
+  .About nav{
+    width: 90%;
+ }
+ .about{
+   width: 90%;
+ }
+}
+
 @media screen and (max-width:425){
-   .did{
-     max-width: 150%;
+   .About{
+     max-width: 110%;
    }
 }
 
@@ -152,7 +170,7 @@ nav .icon-burger .line {
 }
 @media screen and (max-width: 796px) {
 	nav .logo {
-		float: none;
+		float: left;
     width: auto;
     height: auto;
 		justify-content: center;
@@ -181,7 +199,8 @@ nav .icon-burger .line {
 		bottom: 0;
 	}
 	nav .icon-burger {
-		display: block;
+    display: block;
+    right: 98px;
 	}
 	nav :checked ~ .icon-burger .line:nth-child(1) {
 		transform: translateY(10px) rotate(225deg);
@@ -196,7 +215,7 @@ nav .icon-burger .line {
 }
 
 header{
-  height: 50vh;
+  height: 70vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -322,7 +341,7 @@ z-index: -1;
 
 /*About Section*/
 .about-section{
-	width: 100%;
+  width: 105%;
 	background: #f1f1f1;
 	padding: 40px 0;
 }
@@ -334,15 +353,27 @@ z-index: -1;
 	margin: auto;
 }
 
-.about-section h1{
-	text-align: center;
+.about-section h3{
+  text-align: center ;
 }
 
 .border{
 	width: 100px;
 	height: 3px;
 	background: #007bff;
-	margin: 40px auto; 	
+  margin: 40px auto; 	
+  float: left;
+}
+
+
+#logo{
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 200px;
+  left: 900px;
 }
 
 .about-section-row{
@@ -352,6 +383,14 @@ z-index: -1;
 
 .about-section-col{
 	flex: 50%;
+}
+
+.about-section-col #us{
+  text-align: center;
+}
+
+.about-section-col #lo{
+  right: 10px;
 }
 
 .about{
@@ -418,6 +457,16 @@ z-index: -1;
 @media screen and(max-width: 1248){
   .about-section-col{
      width: 100%;
+  }
+}
+
+@media screen and(max-width: 425){
+  .about-section-col{
+     float: left;
+     text-align: center;
+     padding-left: 0;
+     margin-left: 0;
+     height: 200px;
   }
 }
 
@@ -489,12 +538,12 @@ z-index: -1;
    text-decoration: none;
 }
 
-.service p a{
+.service a p{
    height: 50px;
    color: #000;
 }
 
-.service p a:hover{
+.service a p:hover{
   text-decoration: none;
 }
 
@@ -592,12 +641,26 @@ z-index: -1;
 .Button{
 	border: 2px solid white;
 	color: white;
-	padding: 10px;
+	padding: 15px;
 	border-radius: 20px;
 	transition: 1s ease;
 }
 
 .Button:hover{
+	background-color: #007bff;
+	color: black;
+	text-decoration: none;
+}
+
+.con{
+	border: 2px solid white;
+	color: white;
+	padding: 15px;
+	border-radius: 20px;
+  transition: 1s ease;
+}
+
+.con:hover{
 	background-color: #007bff;
 	color: black;
 	text-decoration: none;
@@ -807,14 +870,14 @@ hr {
   padding: 10px;
    text-align: center;
    font-size: 20px;
-   font-family: serif;
+   font-family: Arial;
 }
 
 .Hi{
   text-align: center;
   font-weight: bold;
   font-size: 26px;
-  font-family: serif;
+  font-family:Arial;
   padding: 10px;
 }
 
