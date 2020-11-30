@@ -29,55 +29,6 @@ nav {
 	height: 50px;
 	background-color: rgb(107, 229, 238);
 }
-.did{
-  background-image: url(Vidimg/Heart\ Video.gif);
-  background-repeat: no-repeat;
-  /* background-size: cover; */
-  /* background-position: center center; */
-  background-attachment: fixed;
-  height: 40vh;
-  width: 100% ;
-}
-
-.covid{
-  background-image: url(Vidimg/novel-coronavirus-covid-19-infection-spread-banner-design_1017-24553.jpg);
-  background-repeat: no-repeat;
-  /* background-size: cover; */
-  /* background-position: center center; */
-  background-attachment: fixed;
-  height: 40vh;
-  width: 100% ;
-}
-
-.About{
-  background-image: url(Vidimg/about\ 1.jpg);
-  background-repeat: no-repeat;
-  /* background-size: cover; */
-  /* background-position: center center; */
-  background-attachment: fixed;
-  height: 18vh;
-  width: 100% ;
-}
-
-.Post{
-  background-image: url(Vidimg/sydney\ 3.gif);
-  background-repeat: no-repeat;
-  /* background-size: cover; */
-  /* background-position: center center; */
-  background-attachment: fixed;
-  height: 40vh;
-  width: 100% ;
-}
-
-.cont{
-  background-image: url(Vidimg/world.gif);
-  background-repeat: no-repeat;
-  /* background-size: cover; */
-  /* background-position: center center; */
-  background-attachment: fixed;
-  height: 40vh;
-  width: 104% ;
-}
 
 nav .logo {
 	float: left;
@@ -997,4 +948,11 @@ background-color: #f2d74e; left: 100%; animation-delay: -2.5s;
   display: block;
   margin-left: auto;
   margin-right: auto 
+}
+
+.h h1{
+  font-size: 20px;
+}
+.h h2{
+  font-size: 20px;
 }
