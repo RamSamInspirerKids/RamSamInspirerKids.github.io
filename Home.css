@@ -939,9 +939,7 @@ background-color: #f2d74e; left: 100%; animation-delay: -2.5s;
 .about-us{
   width: 100%;
   height: 100%;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
+  bottom: 10px;
 }
 
 .about-us .flip-card{
