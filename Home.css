@@ -104,8 +104,8 @@ nav .icon-burger .line {
 		z-index: 9;
 		left: 0;
 		right: 0;
-		top: 200px;
-		bottom: 100%;
+		top: 50px;
+		bottom:100%;
 		width: auto;
 		height: auto;
 		flex-direction: column;
