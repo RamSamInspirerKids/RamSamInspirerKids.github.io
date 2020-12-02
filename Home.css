@@ -135,7 +135,8 @@ nav .icon-burger .line {
 	nav :checked ~ .icon-burger .line:nth-child(2) {
 		opacity: 0;
   }
-	
+  
+  
 }
 
 header{
@@ -601,7 +602,7 @@ z-index: -1;
 @media screen and (max-width: 1072px){
 	.footer{
 		display: none;
-	}
+  }
 }
 /*Others*/
 .Email h1{
@@ -953,4 +954,33 @@ background-color: #f2d74e; left: 100%; animation-delay: -2.5s;
 }
 .h h2{
   font-size: 18px;
+}
+
+.bta{
+   padding: 15px;
+   border: 2px solid rgb(255, 0, 0);
+   font-size: 1rem;
+   transition: 1s ease;
+}
+
+.btm a{
+   color: red;
+}
+
+.bta:hover{
+   background-color: red;
+}
+
+.btm a:hover{
+  text-decoration: none;
+  color: white;
+}
+
+ul .nad{
+  list-style-type:none;
+  margin:10;
+  padding:10;
+}
+li .il{
+  display:inline;
 }
