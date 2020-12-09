@@ -8,6 +8,10 @@
    box-sizing: border-box;
 } 
 
+.lh{
+  color: #eee;
+}
+
 html,
 body{
   scroll-behavior: smooth;

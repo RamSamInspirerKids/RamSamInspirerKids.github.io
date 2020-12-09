@@ -21,25 +21,36 @@
     </div>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <nav>
-      <input id="nav-toggle" type="checkbox">
-      <div class="logo"><a href="index.html"><img src="Vidimg/logo.jpg"  height="100" width="100"></a></div>
-      <ul class="links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="About.html">About Us</a></li>
-        <li><a href="Did You Know.html">Did You Know?</a></li>
-        <li><a href="Posts.html">Australia Facts</a></li>
-        <li><a href="aworldfacts.html">World Facts</a></li>
-        <li><a href="Covidstory.html">Covid Story</a></li>
-    </ul>
-      <label for="nav-toggle" class="icon-burger">
-          <div class="line"></div>
-          <div class="line"></div>
-          <div class="line"></div>
+      <a href="index.html"><img src="Vidimg/logo.jpg" width="47px" height="47px" class="i"></a>
+      <!-- Navbar Toggler -->
+      <input type="checkbox" id="box-1">
+      <label id="toggler" for="box-1">
+          <span class="spa"><h1>MENU<i class="fas fa-bars"></i></h1></span>
       </label>
+
+      <!-- Navbar Items -->
+      <ul id="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="About.html">About Us</a></li>
+          <li>
+              <a class="lh">Did You Know &nbsp;&nbsp;<span><i class="fa fa-angle-down"></i></span></a>
+              <ul>
+                  <li><a href="Posts.html">Australia facts</a></li>
+                  <li><a href="Did You Know.html">Body facts</a></li>
+                  <li><a href="aworldfacts.html">World Facts</a></li>
+                  <li><a href="space.html">Space Facts</a></li>
+                  <li><a href="ocean.html">Ocean Facts</a></li>
+              </ul>
+          </li>
+          <li><a href="Covidstory.html">Covid-19 Story</a></li>
+      </ul>
   </nav>
-        <br>       
-        <br>       
-        <img src="Vidimg/sydney 3.gif" class="abo" width="390px">
+      <div class="overlay"></div>
+  </header>
+  <img src="Vidimg/sydney 3.gif" class="abo" width="390px">
+  <br class="b">
+  <br class="b">
+  <br class="b">
         <section id="aus">
           <h1>Australia Facts:</h1>
           <h3>Australian People</h3>
@@ -217,13 +228,6 @@ var x = setInterval(function() {
   <br>
   <br>
   <br>
-  <ul class="nad">
-    <div class="btm">
-        <li><a href="https://forms.gle/PjC3hN5LYDCLLBHQ7" class="bta">Subscribe</a></li>
-    </div>
- </ul>
-  <br>
-  <br>
 <!-- Footer-->
 <footer class="footer">
   <div class="l-footer">
@@ -238,30 +242,13 @@ var x = setInterval(function() {
   </div>
   <br>
   <br>
-  <div class="features">
-      <br>
-      <br>
-      <h2>Quick Links:</h2>
-      <br>
-      <ul class="link">
-        <li><a href="Home" class="il">Home</a></li>
-        <br>
-        <li><a href="About.html" class="il">About US</a></li>
-        <br>
-        <li><a href="Did You Know.html" class="il">Did You Know</a></li>
-        <br>
-        <li><a href="aworldfacts.html" class="il">World Facts</a></li>
-        <br>
-        <li><a href="Covidstory.html" class="il">Covid-19 Story</a></li>
-    </ul>
-  </div>
   <h2>Other Website:</h2>
   <ul>
-  <li><a href="#" class="ih">RamSam Inspirer</a></li>
+  <li><a href="https://www.sites.google.com/view/ramsam-the-inspirer" class="ih">RamSam Inspirer</a></li>
   </ul>
   <div class="b-footer">
       <h1>Current Version:</h1>
-      <p>V1.6.1</p>
+      <p>V1.9</p>
   </div>
   <ul class="nad">
       <div class="btm">
