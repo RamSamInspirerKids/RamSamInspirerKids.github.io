@@ -7,8 +7,17 @@
     <!--Styles-->
     <link rel="stylesheet" href="Home.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">`
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <!--Scripts-->
+        <!------------ GOOGLE FONTS ------------>
+        <link href="https://fonts.googleapis.com/css?family=Anton|Cabin|Lato|Fjalla+One|Montserrat|Roboto&display=swap"
+        rel="stylesheet">
+
+    <!------------ FONTS AWESOME ------------>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+
+    <!------------ CUSTOM STYLE SHEET ------------>
+    <link rel="stylesheet" href="style.css">
     <script src="Home.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
@@ -24,31 +33,52 @@
     </div>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <script>
-        alert("We have updated the Our posts section in home page and the footer throughout the webiste");
+        // alert("We have updated the Navigation bar and the footer");
     </script>
     <nav>
-        <input id="nav-toggle" type="checkbox">
-        <div class="logo"><a href="index.html"><img src="Vidimg/logo.jpg" height="100" width="100"></a></div>
-        <ul class="links">
+        <a href="index.html"><img src="Vidimg/logo.jpg" width="47px" height="47px" class="i"></a>
+        <!-- Navbar Toggler -->
+        <input type="checkbox" id="box-1">
+        <label id="toggler" for="box-1">
+            <span class="spa"><h1>MENU<i class="fas fa-bars"></i></h1></span>
+        </label>
+
+        <!-- Navbar Items -->
+        <ul id="menu">
             <li><a href="index.html">Home</a></li>
             <li><a href="About.html">About Us</a></li>
-            <li><a href="Did You Know.html">Did You Know?</a></li>
-            <li><a href="Posts.html">Australia Facts</a></li>
-            <li><a href="aworldfacts.html">World Facts</a></li>
-            <li><a href="Covidstory.html">Covid Story</a></li>
+            <li>
+                <a href="Did You Know.html">Did You Know &nbsp;&nbsp;<span><i class="fa fa-angle-down"></i></span></a>
+                <ul>
+                    <li><a href="Posts.html">Australia facts</a></li>
+                    <li><a href="aworldfacts.html">World Facts</a></li>
+                    <li><a href="#">Space Facts</a></li>
+                    <li><a href="#">Ocean Facts</a></li>
+                </ul>
+            </li>
+            <li><a href="Covidstory.html">Covid-19 Story</a></li>
         </ul>
-        <label for="nav-toggle" class="icon-burger">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-        </label>
     </nav>
-    <header class="outer-container">
+    <!-- <header class="outer-container">
         <div class="video-container">
             <video src="Vidimg/Ice.mp4" autoplay loop muted></video>
-        </div>
+        </div> -->
         <div class="overlay"></div>
     </header>
+    <br class="b">
+    <br class="b">
+    <br class="b">
+    <br class="b">
+    <br class="b">
+    <br class="b">
+    <br class="b">
+    <br class="b">
+    <br class="b">
+    <br class="b">
+    <br class="b">
+    <br class="b">
+    <br class="b">
+    <br class="b">
 <!--Services Section-->
 <div class="H11">
     <h1>Our Posts</h1>
@@ -186,5 +216,31 @@
             </div>
         </ul>
     </footer>
+    <script>
+        var open = document.getElementById('hamburger');
+var changeIcon = true;
+
+open.addEventListener("click", function(){
+
+    var overlay = document.querySelector('.overlay');
+    var nav = document.querySelector('nav');
+    var icon = document.querySelector('.menu-toggle i');
+
+    overlay.classList.toggle("menu-open");
+    nav.classList.toggle("menu-open");
+
+    if (changeIcon) {
+        icon.classList.remove("fa-bars");
+        icon.classList.add("fa-times");
+
+        changeIcon = false;
+    }
+    else {
+        icon.classList.remove("fa-times");
+        icon.classList.add("fa-bars");
+        changeIcon = true;
+    }
+});
+    </script>
 </body>
 </html>

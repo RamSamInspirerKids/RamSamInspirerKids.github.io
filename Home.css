@@ -17,139 +17,166 @@ body{
     padding: 0px;
 }
 
+a{
+	text-decoration: none;
+  color: #eee;
+}
+
+a:hover{
+	text-decoration: none;
+	color: #eee;
+}
+
 nav {
-	position: fixed;
-	z-index: 10;
-	left: 0;
-	right: 0;
-	top: 0;
-	font-family: 'Montserrat', sans-serif;
-  padding: 0 5%;
   width: 100%;
-	height: 50px;
-	background-color: rgb(107, 229, 238);
-}
-
-nav .logo {
-	float: left;
-	width: 40%;
-	height: 100%;
-	display: flex;
-	align-items: center;
-	font-size: 24px;
-	color: #fff;
-}
-nav .links {
-	float: right;
-	padding: 0;
-	margin: 0;
-	width: 60%;
-	height: 100%;
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-}
-nav .links li {
-  list-style: none;
-  margin: .1rem;
-}
-nav .links a {
-	display: block;
-  padding: .5rem;
-  text-align: center;
+  height: 50px;
+  background-color: #007bff;
+  display: block;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-	font-size: 16px;
-	font-weight: bold;
-	color: teal;
-  text-decoration: none;
-  transition: 1s ease;
-}
-nav .links a:hover{
-  color: blue;
-  border-bottom: 2px solid rgb(0, 0, 0);
-}
-#nav-toggle {
-	position: absolute;
-  top: -100px;
-  cursor: pointer;
-}
-nav .icon-burger {
-	display: none;
-	position: absolute;
-	right: 5%;
-	top: 50%;
-  transform: translateY(-50%);
-  cursor: pointer;
-}
-nav .icon-burger .line {
-	width: 30px;
-	height: 5px;
-	background-color: #fff;
-	margin: 5px;
-	border-radius: 3px;
-  transition: all .3s ease-in-out;
-  cursor: pointer;
-}
-@media screen and (max-width: 796px) {
-	nav .logo {
-		float: left;
-    width: auto;
-    height: auto;
-		justify-content: center;
-  }
-	nav .links {
-		float: none;
-		position: fixed;
-		z-index: 9;
-		left: 0;
-		right: 0;
-		top: 50px;
-		bottom:100%;
-		width: auto;
-		height: auto;
-		flex-direction: column;
-		justify-content: space-evenly;
-		background-color: transparent;
-		overflow: hidden;
-		box-sizing: border-box;
-		transition: all .5s ease-in-out;
-	}
-	nav .links a {
-		font-size: 20px;
-	}
-	nav :checked ~ .links {
-		bottom: 0;
-	}
-	nav .icon-burger {
-    display: block;
-    float: left;
-    right: 97px;
-	}
-	nav :checked ~ .icon-burger .line:nth-child(1) {
-		transform: translateY(10px) rotate(225deg);
-	}
-	nav :checked ~ .icon-burger .line:nth-child(3) {
-		transform: translateY(-10px) rotate(-225deg);
-	}
-	nav :checked ~ .icon-burger .line:nth-child(2) {
-		opacity: 0;
-  }
-  
-  
 }
 
-header{
-  height: 70vh;
+
+.logo {
+  font-family: "Anton", serif;
+  font-size: 35px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bolder;
+  text-transform: uppercase;
+  margin-left: 20px;
+}
+
+nav ul {
+  background-color: #007bff;
+}
+
+nav ul li {
+  padding: 15px;
+  font-family: "Cabin", serif;
+  display: inline-block;
+  position: relative;
+}
+
+.b{
+  display: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
+nav ul li a:hover{
+   color: white;
+   text-decoration: none;
+}
+
+nav ul li ul {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  text-align: center;
+  width: 100%;
+  border-top: 3px solid #fff;
+  transition: 0.4s ease-in-out;
+}
+
+.spa h1{
+   font-size: 1.4rem;
+}
+
+nav > ul > li > ul {
+  left: 0;
+  top: 90%;
+}
+
+nav > ul > li > ul > li ul {
+  border-top: 3px solid #fff;
+  border-left: 3px solid #fff;
+  left: 100%;
+  top: 30%;
+}
+
+.i{  
+  float: right;
+}
+
+.drop-icon {
+  transform: rotate(-90deg);
+}
+
+nav ul li:hover > ul {
+  opacity: 1;
+  visibility: visible;
+}
+
+input {
+  display: none;
+}
+
+label {
+  width: 150px;
+  height: 45px;
+  justify-content: center;
+  align-items: center;
+  font-weight: bolder;
+  font-size: 30px;
+  border: 1px solid #fff;
+  color: #ffff;
+  display: none;
+  opacity: 0;
+}
+
+label span {
+  font-family: "Roboto", serif;
+}
+
+@media (max-width:768px) {
+  nav > ul {
+      position: absolute;
+      top: 50px;
+      left: -100%;
+      width: 38%;
+      transition: 0.8s linear;
+  }
+
+  nav ul li {
+      display: block;
+  }
+
+  label {
+      display: flex;
+      margin-right: 10px;
+      opacity: 1;
+  }
+
+  .drop-icon {
+      transform: rotate(0deg);
+  }
+
+  nav ul li ul {
+      width: max-content;
+      z-index: 1;
+  }
+
+  input:checked ~ #menu {
+      left: 0;
+  }
+  .b{
+    display: block;
+  }
+}
+
+.outer-container{
+  height: 80vh;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
-}
-
-.image{
-	float: left;
-	background: transparent;
 }
 
 /*Hero*/
