@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <!--Styles-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="stylesheet" href="Home.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
@@ -25,49 +26,45 @@
     </div>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <script>
-        alert("We have updated the Navigation bar, footer and added Ocean Facts, Space Facts and Body Facts");
+        alert("We have updated the Navigation bar and the footer");
     </script>
-    <nav>
-        <a href="index.html"><img src="Vidimg/logo.jpg" width="47px" height="47px" class="i"></a>
-        <!-- Navbar Toggler -->
-        <input type="checkbox" id="box-1">
-        <label id="toggler" for="box-1">
-            <span class="spa"><h1>MENU<i class="fas fa-bars"></i></h1></span>
-        </label>
-
-        <!-- Navbar Items -->
-        <ul id="menu">
-            <li><a href="index.html">Home</a></li>
+<div id="wrap">
+	<nav>
+		<div class="logo"><a href="index.html"><img src="Vidimg/logo.jpg" height="100" width="100"></a></div>
+		<ul class="links">
+			<li><a href="index.html">Home</a></li>
             <li><a href="About.html">About Us</a></li>
-            <li>
-                <a class="lh">Did You Know &nbsp;&nbsp;<span><i class="fa fa-angle-down"></i></span></a>
-                <ul>
-                    <li><a href="Posts.html">Australia facts</a></li>
-                    <li><a href="Did You Know.html">Body facts</a></li>
-                    <li><a href="aworldfacts.html">World Facts</a></li>
-                    <li><a href="space.html">Space Facts</a></li>
-                    <li><a href="ocean.html">Ocean Facts</a></li>
-                </ul>
+            <li class="cvd"><a href="Covidstory.html">Covid-19 Story</a></li>
+            <li><a class="lh">Did You Know<i class="fa fa-arrow-down"></i></a>
+              <div class="sub-menu-1">
+                  <ul>
+                      <li><a href="Did You Know.html">Body Facts</a></li>
+                      <li><a href="Posts.html">Australia Facts</a></li>
+                      <li><a href="aworldfacts.html">World Facts</a></li>
+                      <li><a href="space.html">Space Facts</a></li>
+                      <li><a href="ocean.html">Ocean Facts</a></li>
+                  </ul>
+              </div>
             </li>
-            <li><a href="Covidstory.html">Covid-19 Story</a></li>
-        </ul>
-    </nav>
-        <div class="overlay"></div>
-    </header>
-    <br class="b">
-    <br class="b">
-    <br class="b">
-    <br class="b">
-    <br class="b">
-    <br class="b">
-    <br class="b">
-    <br class="b">
-    <br class="b">
-    <br class="b">
-    <br class="b">
-    <br class="b">
-    <br class="b">
-    <br class="b">
+		</ul>
+		<button type="button" class="icon-burger">
+			<span class="line"></span>
+			<span class="line"></span>
+			<span class="line"></span>
+			<span class="line"></span>
+		</button>
+	</nav>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
         <!-- <header class="outer-container">
         <div class="video-container">
             <video src="Vidimg/Ice.mp4" autoplay loop muted></video>
@@ -193,30 +190,16 @@
         </ul>
     </footer>
     <script>
-        var open = document.getElementById('hamburger');
-var changeIcon = true;
+const wrap = document.querySelector('#wrap');
+const burger = document.querySelector('.icon-burger');
 
-open.addEventListener("click", function(){
-
-    var overlay = document.querySelector('.overlay');
-    var nav = document.querySelector('nav');
-    var icon = document.querySelector('.menu-toggle i');
-
-    overlay.classList.toggle("menu-open");
-    nav.classList.toggle("menu-open");
-
-    if (changeIcon) {
-        icon.classList.remove("fa-bars");
-        icon.classList.add("fa-times");
-
-        changeIcon = false;
-    }
-    else {
-        icon.classList.remove("fa-times");
-        icon.classList.add("fa-bars");
-        changeIcon = true;
-    }
-});
+burger.addEventListener('click', () => {
+	if (wrap.classList.contains('nav-opened')) {
+		wrap.classList.remove('nav-opened');
+	} else {
+		wrap.classList.add('nav-opened');
+	}
+})
     </script>
 </body>
 </html>
