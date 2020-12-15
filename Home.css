@@ -39,7 +39,8 @@ nav {
 	top: 0;
 	font-family: 'Montserrat', sans-serif;
 	padding: 0 5%;
-	height: 50px;
+  height: 50px;
+  width: 100%;
 	background-color: #007bff;
 	box-shadow: 0 0 5px rgba(0,0,0,.5);
 }
@@ -164,7 +165,21 @@ nav .icon-burger .line:nth-child(3) {
     opacity: .3;
   }
  .sub-menu-1{display: block;}
-
+.cid{
+  width: 99%;
+}
+.dyk{
+  width: 76%;
+}
+.aus{
+  width: 88%;
+}
+.will{
+  width: 76%;
+}
+.spa{
+  width: 76%;
+}
 }
 
 .sub-menu-1{
@@ -313,7 +328,7 @@ z-index: -1;
 
 /*About Section*/
 .about-section{
-  width: 105%;
+  width: 100%;
 	background: #f1f1f1;
 	padding: 40px 0;
 }
@@ -441,9 +456,54 @@ z-index: -1;
      height: 200px;
   }
 }
+/*About Section 2*/
+.card_wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.card{
+    width: 250px;
+    height: 310px;
+    background-color: #eee;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: .5s ease;
+}
+
+.card_details h4{
+  text-align: center;
+  font-family: 'Open Sans Condensed',Arial, Helvetica, sans-serif;
+}
+
+.card_details p{
+  text-align: center;
+  font-family: 'Open Sans Condensed',Arial, Helvetica, sans-serif;
+}
+
+.card:hover{
+   background-color: #007bff;
+}
+
+.card:hover h4{
+    color: #eee;
+}
+
+.card:hover h4 strong{
+   color: #000;
+}
+
+.card:hover p{
+  color: #eee;
+}
 
 /*Services Section*/
-
 .header{
   width: 90%;
   margin: 0 auto;
