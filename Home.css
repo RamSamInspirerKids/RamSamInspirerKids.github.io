@@ -66,7 +66,7 @@ nav .links {
 }
 nav .links a {
 	display: block;
-	padding: 1em;
+	padding: .1em;
 	font-size: 16px;
 	font-weight: bold;
 	color: #000;
@@ -96,33 +96,35 @@ nav .icon-burger .line:nth-child(3) {
 	margin-top: -10px;
 }
 @media screen and (max-width: 768px) {
-	nav .logo {
+  nav .logo {
 		float: none;
 		width: auto;
 	}
 	nav .links {
-		float: none;
-		position: fixed;
+    float: none;
+    position: fixed;
+    display: block;
 		z-index: 9;
-		left: 100%;
-		right: -100%;
-		top: 100px;
+		left: 200%;
+    right: -200%;
+		top: 50px;
 		bottom: 0;
 		width: auto;
-		height: auto;
+		height: 330px;
 		flex-direction: column;
 		justify-content: start;
 		background-color: #007bff;
-		overflow: hidden;
-		box-sizing: border-box;
-		transition: all .5s ease-in-out;
-	}
+		overflow: clip;
+		box-sizing: content-box;
+    transition: all .5s ease-in-out;
+    margin-left: auto;
+  }
 	nav .links li {
 		padding: .5em 0;
 	}
 	nav .links a {
-		font-size: 20px;
-		transform: translateX(100px);
+		font-size: 12px;
+    transform: translateX(100px);
 		transition: all .3s ease-in-out;
 	}
 	nav .icon-burger {
@@ -164,21 +166,18 @@ nav .icon-burger .line:nth-child(3) {
 		transform: translateX(-30%);
     opacity: .3;
   }
- .sub-menu-1{display: block;}
-.cid{
-  width: 99%;
-}
+ .sub-menu-1{display: block;text-align: center;}
 .dyk{
   width: 76%;
 }
 .aus{
-  width: 88%;
+  width: 80%;
 }
 .will{
   width: 76%;
 }
-.spa{
-  width: 76%;
+.dev{
+   width: 80%;
 }
 }
 
@@ -186,6 +185,11 @@ nav .icon-burger .line:nth-child(3) {
    display: none;
    transition: 1s ease;
    color: white;
+   text-align: center;
+}
+
+.sub-menu-1 a{
+  text-align: center;
 }
 
 .sub-menu-1 ul{
@@ -194,11 +198,13 @@ nav .icon-burger .line:nth-child(3) {
 
 .sub-menu ul li a{
   color: #eee;
+  text-align: center;
 }
 
 nav .links li:hover .sub-menu-1{
     display: block;
     position: absolute; 
+    text-align: center;
 }
 
 nav .link:hover .cvd{
@@ -407,7 +413,7 @@ z-index: -1;
 
 .progress-bar{ 
 	height: 12px;
-	background: royalblue;
+	background: #007bff;
 	border-radius: 12px;
 }
 
@@ -503,6 +509,18 @@ z-index: -1;
   color: #eee;
 }
 
+.card p{
+  color: #007bff;
+}
+
+.card h4{
+  color: #007bff;
+}
+
+.card h4 strong{
+  color: #000;
+}
+
 /*Services Section*/
 .header{
   width: 90%;
@@ -570,6 +588,10 @@ z-index: -1;
    top: 0;
    right: 0;
 } 
+
+.tittle a{
+  color:#007bff;
+}
 
 /*Footer*/
 .footer{
@@ -658,7 +680,7 @@ h2 i{
 } 
 /* Others */
 .Email h1{
-	border-bottom: 5px solid lightseagreen;
+	border-bottom: 5px solid #007bff;
 	width: 10%;
 	color: black;
 	padding: 0px;
@@ -666,15 +688,15 @@ h2 i{
 }
 
 .Email h1:hover{
-	border-bottom: 5px solid turquoise;
+	border-bottom: 5px solid #007bff;
 	width: 10%;
-	color: mediumaquamarine;
+	color: #007bff;
 }
 
 .Email p{
-    color: lightseagreen;
+    color:#007bff;
 	transition: 1s ease;
-	color: mediumaquamarine;
+	color: #007bff;
 }
 
 .arrow-btn{
@@ -688,7 +710,7 @@ h2 i{
     height: 39px;
     width: 37px;
     text-align: center;
-    background: #1b1b1b;
+    background: #007bff;
     display: block;
     border-radius: 3px;
     cursor: pointer ;
@@ -756,7 +778,7 @@ h2 i{
 .Port{
     width:100%;
 	height: 650px;
-	background: #217bcf;
+	background: #007bff;
 }
 
 .port #hero {
@@ -788,7 +810,7 @@ h2 i{
 	height: 60px;
 	width: 200px;
 	padding: 10px;
-	border: 2px solid #007bff;
+	border: 2px solid#007bff;
 	text-align: center;
 	color: black;
 	font-size: 22px;
@@ -796,7 +818,7 @@ h2 i{
 }
 
 .cta:hover{
-	background-color: #007bff;
+	background-color:#007bff;
 	color: white;
 	text-decoration: none;
 }
@@ -1038,3 +1060,8 @@ li .il{
   display:inline;
 }
 
+.bug div p{
+  float: left;
+  margin-right: auto;
+  width: 50%;
+}
