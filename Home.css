@@ -172,7 +172,7 @@ nav .icon-burger .line:nth-child(3) {
 		transform: translateX(-30%);
     opacity: .3;
   }
- .sub-menu-1{display: block;text-align: center;}
+ .sub-menu-1{display: block;text-align: center;margin-bottom: 50px;}
 }
 
 .conta{
@@ -192,7 +192,7 @@ nav .icon-burger .line:nth-child(3) {
 }
 
 .sub-menu-1 a{
-  text-align: center;
+  text-align: center
 }
 
 .sub-menu-1 ul{
@@ -872,13 +872,13 @@ hr {
 
 .hi{
   padding: 10px;
-   text-align: center;
+   text-align: justify;
    font-size: 20px;
    font-family: Arial;
 }
 
 .Hi{
-  text-align: center;
+  text-align:justify;
   font-weight: bold;
   font-size: 26px;
   font-family:Arial;

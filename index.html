@@ -27,7 +27,7 @@
     </div>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <script>
-        // alert("We have turned the blue color to green color throughout the website. We have Updated the Navigation Bar");
+        alert("We have turned the green color to blue color throughout the website. We have Updated the Navigation Bar, changed the video, fixed a bug and tweaked some pages");
     </script>
 <div id="wrap">
 	<nav>
@@ -63,7 +63,7 @@
             <video src="Vidimg/0c72fcef9430f200206d37e8c20497cc_w200.webp" autoplay loop muted></video>
         </div>
         </header> -->
-<img src="Vidimg/giphy (1).webp" class="vid">
+<img src="Vidimg/Learn 2.gif" class="vid">
 <!--Services Section-->
 <div class="header">
     <h1>Our Posts</h1>
@@ -138,7 +138,7 @@
     </div>
         <div class="b-footer">
             <h1>Current Version:</h1>
-            <p>V1.9.3</p>
+            <p>V1.9.4</p>
         </div>
         <ul class="nad">
             <div class="btm">
@@ -157,6 +157,12 @@ burger.addEventListener('click', () => {
 		wrap.classList.add('nav-opened');
 	}
 })
+
+$(document).click(function(e) {
+	if (!$(e.target).is('.panel-body')) {
+    	$('nav .links').links('hide');	    
+    }
+});
     </script>
 </body>
 </html>
