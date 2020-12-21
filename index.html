@@ -27,7 +27,7 @@
     </div>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <script>
-        alert("We have turned the green color to blue color throughout the website. We have Updated the Navigation Bar, changed the video, fixed a bug and tweaked some pages");
+        // alert("We have tweaked the navigation bar ");
     </script>
 <div id="wrap">
 	<nav>
@@ -36,17 +36,11 @@
 			<li><a href="index.html">Home</a></li>
             <li><a href="About.html">About Us</a></li>
             <li class="cvd"><a href="Covidstory.html">Covid-19 Story</a></li>
-            <li><a class="lh">Did You Know<i class="fa fa-arrow-down"></i></a>
-              <div class="sub-menu-1">
-                  <ul>
-                      <li><a href="Did You Know.html">Body Facts</a></li>
-                      <li><a href="Posts.html">Australia Facts</a></li>
-                      <li><a href="aworldfacts.html">World Facts</a></li>
-                      <li><a href="space.html">Space Facts</a></li>
-                      <li><a href="ocean.html">Ocean Facts</a></li>
-                  </ul>
-              </div>
-            </li>
+            <li><a href="Did You Know.html">Body Facts</a></li>
+            <li><a href="Posts.html">Australia Facts</a></li>
+            <li><a href="aworldfacts.html">World Facts</a></li>
+            <li><a href="space.html">Space Facts</a></li>
+            <li><a href="ocean.html">Ocean Facts</a></li>
 		</ul>
 		<button type="button" class="icon-burger">
 			<span class="line"></span>
@@ -58,12 +52,47 @@
 </div>
 <br>
 <br>
-        <!-- <header class="outer-container">
-        <div class="video-container">
-            <video src="Vidimg/0c72fcef9430f200206d37e8c20497cc_w200.webp" autoplay loop muted></video>
+<!-- <img src="Vidimg/Learn 2.gif" class="vid"> -->
+<div class="slideshow-container">
+    <div class="Slides fade">
+        <div class="numbertext">
+            1 / 5
         </div>
-        </header> -->
-<img src="Vidimg/Learn 2.gif" class="vid">
+        <img src="Vidimg/Learn 2.gif", style='width:100%' height="60%">
+    </div>
+    <div class="Slides fade">
+        <div class="numbertext">
+            2 / 5
+        </div>
+        <img src="Vidimg/learn 3.webp", style='width:100%' height="100%">
+    </div>
+    <div class="Slides fade">
+        <div class="numbertext">
+            3 / 5
+        </div>
+        <img src="Vidimg/Time.webp", style='width:100%' height="100%">
+    </div>
+    <div class="Slides fade">
+        <div class="numbertext">
+            4 / 5
+        </div>
+        <img src="Vidimg/Book.webp", style='width:100%' height="100%">
+    </div>
+    <div class="Slides fade">
+        <div class="numbertext">
+            5 / 5
+        </div>
+        <img src="Vidimg/BOOK 3.webp", style='width:100%' height="100%">
+    </div>
+    <div class="dots" style="text-align:center">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    </div>
+</div>
+
 <!--Services Section-->
 <div class="header">
     <h1>Our Posts</h1>
@@ -163,6 +192,26 @@ $(document).click(function(e) {
     	$('nav .links').links('hide');	    
     }
 });
-    </script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("Slides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 1000); // Change image every 2 seconds
+}
+
+</script>
 </body>
 </html>
