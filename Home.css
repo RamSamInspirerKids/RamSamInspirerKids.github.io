@@ -26,6 +26,11 @@ body{
     overflow-x: hidden;
 }
 
+.responsive {
+  width: 100%;
+  height: auto;
+}
+
 a{
 	text-decoration: none;
   color: #eee;
@@ -101,7 +106,7 @@ nav .icon-burger .line {
 nav .icon-burger .line:nth-child(3) {
 	margin-top: -10px;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1194px) {
   nav .logo {
 		float: none;
 		width: auto;
