@@ -185,9 +185,9 @@ nav .icon-burger .line:nth-child(3) {
    height: 100px;
 }
 
-.vid{
+header{
   height: auto;
-  width: 100%;
+  width: 320px;
   display: flex;
   justify-content: center;
   align-items: center;
