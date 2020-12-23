@@ -35,6 +35,74 @@ a:hover{
 	text-decoration: none;
 	color: #eee;
 } */
+:root{
+  --duration: 20s;
+}
+
+@-webkit-keyframes ticker {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    visibility: visible;
+  }
+
+  100% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+@keyframes ticker {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    visibility: visible;
+  }
+
+  100% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+.ticker-wrap {
+  background-color: #fff;
+  bottom: 700px;
+  width: 100%;
+  overflow: hidden;
+  height: 3rem;
+  padding-left: 100%;
+  box-sizing: content-box;
+}
+  .ticker{
+
+    display: inline-block;
+    height: 2rem;
+    line-height: 4rem;  
+    white-space: nowrap;
+    padding-right: 100%;
+    box-sizing: content-box;
+
+    -webkit-animation-iteration-count: infinite; 
+            animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+   -webkit-animation-name: ticker;
+           animation-name: ticker;
+    -webkit-animation-duration: var(--duration);
+            animation-duration: var(--duration);
+  }
+    .item {
+
+      display: inline-block;
+     bottom: 5px;
+      padding: 0 2rem;
+      font-size: 2rem;
+      color: white;   
+    }
+.ticker__item{
+   color: #002c6e;
+}
 
 nav {
 	position: fixed;
@@ -544,7 +612,7 @@ z-index: -1;
 .card{
     width: 250px;
     height: 310px;
-    background-color: #eee;
+    background-color: #fff;
     margin: 10px;
     padding: 10px;
     border-radius: 5px;
@@ -590,6 +658,61 @@ z-index: -1;
 
 .card h4 strong{
   color: #000;
+}
+
+/*News*/
+.card-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.card-{
+    width: 300px;
+    height: auto;
+    background-color: #002c6e;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: .5s ease;
+}
+
+.card-:hover{
+  background-color: #fff;
+}
+
+.card-:hover .card-details .date{
+   color: #002c6e;
+}
+
+.card-:hover .card-details .heading{
+  color: #002c6e;
+}
+.card-:hover .card-details .p{
+  color: #002c6e;
+}
+.card-:hover .card-details a{
+  color: #002c6e;
+  text-decoration: underline;
+}
+
+.card-details .date{
+  color: #fff;
+}
+.card-details .heading{
+  color: #fff;
+  font-weight: bold;
+}
+.card-details .p{
+  color: #fff;
+}
+.card-details a{
+  color: #fff;
+  text-decoration: underline;
 }
 
 /*Services Section*/
@@ -1125,4 +1248,10 @@ li .il{
   float: left;
   margin-right: auto;
   width: 50%;
+}
+
+.news{
+   height: 300px;
+   width: auto;
+   background-color: red;
 }

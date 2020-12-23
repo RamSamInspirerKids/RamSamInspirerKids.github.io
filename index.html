@@ -27,15 +27,16 @@
     </div>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <script>
-        alert("Welcome to RamSam the Inspirer Kids");
+        alert("Welcome to RamSam the Inspirer Kids. We have added a new page called news and did a few changes");
     </script>
 <div id="wrap">
 	<nav>
-		<div class="logo"><a href="index.html"><img src="Vidimg/logo.jpg" height="50" width="50"></a></div>
+		<div class="logo"><a href="index.html"><img src="Vidimg/logo 3.png" width="45" height="45"></a></div>
 		<ul class="links">
 			<li><a href="index.html">Home</a></li>
             <li><a href="About.html">About Us</a></li>
             <li><a href="Did You Know.html">Did You know</a></li>
+            <li><a href="news.html">News</a></li>
             <li class="cvd"><a href="Covidstory.html">Covid-19 Story</a></li>
             <li><a href="body.html">Body Facts</a></li>
             <li><a href="Aus.html">Australia Facts</a></li>
@@ -104,6 +105,21 @@
     <span class="dot"></span>
     </div>
 </div>
+<div class="ticker-wrap">
+    <div class="ticker">
+      <div class="ticker__item"><Strong>Click the three lines above to see the Navigation Bar</Strong></div>
+      <div class="ticker__item"> Hello</div>
+      <div class="ticker__item">Ugh PBR&B kale chips Echo Park.</div>
+      <div class="ticker__item">Gluten-free mumblecore chambray mixtape food truck. </div>
+      <!--<div class="ticker__item">Authentic bitters seitan pug single-origin coffee whatever.</div>
+      <div class="ticker__item">Letterpress chambray brunch.</div>
+      <div class="ticker__item">Vice mlkshk crucifix beard chillwave meditation hoodie asymmetrical Helvetica.</div>
+      <div class="ticker__item">Ugh PBR&B kale chips Echo Park.</div>
+      <div class="ticker__item">Gluten-free mumblecore chambray mixtape food truck. </div>
+      <div class="ticker__item">Authentic bitters seitan pug single-origin coffee whatever.</div>-->
+    </div>
+    </div>
+    
         <!-- <header class="outer-container">
         <div class="video-container">
             <video src="Vidimg/Intro_Video.mp4" autoplay loop muted></video>
@@ -127,10 +143,10 @@
     <br>
     <div class="services">
         <div class="service">
-            <a href="https://www.sites.google.com/view/ramsam-the-inspirer/posts?authuser=0"><img src="Vidimg/Icons/News3.png" height="70px"></a>
-            <h4 class="tittle"><a href="https://www.sites.google.com/view/ramsam-the-inspirer/posts?authuser=0">News</a></h4>
-            <p class="tittle"><a href="https://www.sites.google.com/view/ramsam-the-inspirer/posts?authuser=0">We share the latest news and updates that are happening around the world</a></p>
-            <a href="https://www.sites.google.com/view/ramsam-the-inspirer/posts?authuser=0" class="ex"><strong>Explore</strong></a>
+            <a href="news.html"><img src="Vidimg/Icons/News3.png" height="70px"></a>
+            <h4 class="news.html">News</a></h4>
+            <p class="tittle"><a href="news.html">We share the latest news and updates that are happening around the world</a></p>
+            <a href="news.html" class="ex"><strong>Explore</strong></a>
         </div>
     </div>
     <br>
@@ -158,7 +174,7 @@
 <!-- Footer-->
     <footer class="footer">
         <div class="l-footer">
-            <h1><img src="Vidimg/logo.jpg" height="150" width="150"></h1>
+            <h1><img src="Vidimg/logo 3.png"></h1>
         </div>
         <div class="r-footer">
             <h2>Contact:</h2>
@@ -222,6 +238,42 @@ function showSlides() {
     setTimeout(showSlides, 2500); // Change image every 2 seconds
 }
 
+var $tickerWrapper = $(".tickerwrapper");
+var $list = $tickerWrapper.find("ul.list");
+var $clonedList = $list.clone();
+var listWidth = 10;
+
+$list.find("li").each(function (i) {
+			listWidth += $(this, i).outerWidth(true);
+});
+
+var endPos = $tickerWrapper.width() - listWidth;
+
+$list.add($clonedList).css({
+	"width" : listWidth + "px"
+});
+
+$clonedList.addClass("cloned").appendTo($tickerWrapper);
+
+//TimelineMax
+var infinite = new TimelineMax({repeat: -1, paused: true});
+var time = 40;
+
+infinite
+  .fromTo($list, time, {rotation:0.01,x:0}, {force3D:true, x: -listWidth, ease: Linear.easeNone}, 0)
+  .fromTo($clonedList, time, {rotation:0.01, x:listWidth}, {force3D:true, x:0, ease: Linear.easeNone}, 0)
+  .set($list, {force3D:true, rotation:0.01, x: listWidth})
+  .to($clonedList, time, {force3D:true, rotation:0.01, x: -listWidth, ease: Linear.easeNone}, time)
+  .to($list, time, {force3D:true, rotation:0.01, x: 0, ease: Linear.easeNone}, time)
+  .progress(1).progress(0)
+  .play();
+
+//Pause/Play		
+$tickerWrapper.on("mouseenter", function(){
+	infinite.pause();
+}).on("mouseleave", function(){
+	infinite.play();
+});
 </script>
 </body>
 </html>
