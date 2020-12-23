@@ -611,7 +611,7 @@ z-index: -1;
 
 .card{
     width: 250px;
-    height: 200px;
+    height: 170px;
     background-color: #fff;
     margin: 10px;
     padding: 10px;
@@ -946,10 +946,10 @@ h2 i{
 
 
 .cta{
-	height: 60px;
-	width: 270px;
+	height: 50px;
+	width: 200px;
 	padding: 10px;
-	border: 2px solid #002c6e;
+	border: 3px solid #002c6e;
 	text-align: center;
 	color: black;
 	font-size: 22px;
@@ -1002,23 +1002,6 @@ h2 i{
   color: black;
   font-size: xx-large;
   font-family: 'Dosis',sans-serif;
-}
-
-.cta{
-	height: 60px;
-	width: 200px;
-	padding: 10px;
-	border: 2px solid #002c6e;
-	text-align: center;
-	color: black;
-	font-size: 22px;
-  transition: .5s;
-}
-
-.cta:hover{
-	background-color:#002c6e;
-	color: white;
-	text-decoration: none;
 }
 
 .form1{
@@ -1228,8 +1211,12 @@ background-color: #f2d74e; left: 100%; animation-delay: -2.5s;
   font-size: 18px;
 }
 
+.cent{
+   margin-left: 100px;
+}
+
 .bta{
-   padding: 15px;
+   padding: 10px;
    border: 2px solid rgb(255, 0, 0);
    font-size: 1rem;
    transition: 1s ease;
