@@ -36,7 +36,7 @@ a:hover{
 	color: #eee;
 } */
 :root{
-  --duration: 20s;
+  --duration: 10s;
 }
 
 @-webkit-keyframes ticker {
@@ -718,13 +718,13 @@ z-index: -1;
 /*Services Section*/
 .header{
   width: 90%;
-  margin: 0 auto;
+  /* margin: 0 auto; */
 }
 .header > h1{
   font-weight: 300 !important;
   letter-spacing: 1px;
   text-align: center;
-  margin-top: 60px;
+  margin-top: 10px;
   font-size: 3em; 
 }
 
@@ -799,9 +799,10 @@ z-index: -1;
   display: -o-flex;
   display: flex;
   flex-direction: wrap;
-  padding: 50px;
+  padding: 10px;
   color: #fff;
   width: 100%;
+  height: 70%;
   background: #002c6e;
 }
 
@@ -826,7 +827,7 @@ z-index: -1;
 .lin{color: white;}
 
 .footer h2{
-  font-size: 2rem;
+  font-size: 1rem;
 }
 
 .footer a{
@@ -841,6 +842,10 @@ h2 i{
   text-decoration: none;
   color: #fff;
   transition: .5s ease;
+}
+
+.b-footer h1{
+   font-size: 1rem;
 }
  
 .footer .ih{
