@@ -36,7 +36,7 @@ a:hover{
 	color: #eee;
 } */
 :root{
-  --duration: 30s;
+  --duration: 80s;
 }
 
 @-webkit-keyframes ticker {
